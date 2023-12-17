@@ -10,7 +10,7 @@ public class Aneckdoty {
     @SneakyThrows
     public String aneckdot() {
         listOfJokes = new ArrayList<>();
-        Document jsoup=Jsoup.connect("https://anekdoty.ru/cherniy-yumor/").get();
+        Document jsoup=Jsoup.connect("https://anekdoty.ru").get();
         Elements ulElements = jsoup.select("ul.item-list");
         for (Element ul : ulElements) {
             Elements liElements = ul.select("div.holder-body");
