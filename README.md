@@ -1,1 +1,1 @@
-# russian_jokes_bot
+jokes_bot
